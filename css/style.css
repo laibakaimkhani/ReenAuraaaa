@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReenAura | Everyday Elegance, Reimagined</title>
+    <meta name="description"
+        content="ReenAura offers casual, minimal, and aesthetic everyday wearable jewellery for the modern generation.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Lucide) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">ReenAura</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cart-toggle">
+                    <i data-lucide="shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Links -->
+        <div class="mobile-links" id="mobile-links">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#shop" class="mobile-link">Shop</a>
+            <a href="#collections" class="mobile-link">Collections</a>
+            <a href="#about" class="mobile-link">About</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Everyday Elegance, <br>Reimagined</h1>
+            <p>Minimalist, soft luxury jewellery designed for the modern lifestyle.</p>
+            <div class="hero-cta">
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+                <a href="#collections" class="btn btn-secondary">Explore Collection</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Collections Section -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Collections</h2>
+                <p>Curated pieces to match your every mood.</p>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card" data-category="rings">
+                    <img src="https://images.pexels.com/photos/32382467/pexels-photo-32382467.jpeg?_gl=1*tri6rh*_ga*MTIwNDY3MzY4NC4xNzQ3MzkwNTk5*_ga_8JE65Q40S6*czE3NzgwOTc5OTIkbzUkZzEkdDE3NzgwOTg5NzYkajU5JGwwJGgw"
+                        alt="Rings">
+                    <div class="collection-info">
+                        <h3>Rings</h3>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="earrings">
+                    <img src="https://images.pexels.com/photos/31605853/pexels-photo-31605853.jpeg?_gl=1*hmlqmc*_ga*MTIwNDY3MzY4NC4xNzQ3MzkwNTk5*_ga_8JE65Q40S6*czE3NzgwOTc5OTIkbzUkZzEkdDE3NzgwOTk3NzUkajIwJGwwJGgw"
+                        alt="Earrings">
+                    <div class="collection-info">
+                        <h3>Earrings</h3>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="necklaces">
+                    <img src="https://images.pexels.com/photos/23495720/pexels-photo-23495720.jpeg?_gl=1*s1n31y*_ga*MTIwNDY3MzY4NC4xNzQ3MzkwNTk5*_ga_8JE65Q40S6*czE3NzgwOTc5OTIkbzUkZzEkdDE3NzgwOTk0NDckajU5JGwwJGgw"
+                        alt="Necklaces">
+                    <div class="collection-info">
+                        <h3>Necklaces</h3>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="bracelets">
+                    <img src="https://images.pexels.com/photos/30720993/pexels-photo-30720993.jpeg?_gl=1*84cjfn*_ga*MTIwNDY3MzY4NC4xNzQ3MzkwNTk5*_ga_8JE65Q40S6*czE3NzgwOTc5OTIkbzUkZzEkdDE3NzgwOTk2MjgkajIkbDAkaDA."
+                        alt="Bracelets">
+                    <div class="collection-info">
+                        <h3>Bracelets</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section class="shop" id="shop">
+        <div class="container">
+            <div class="section-header">
+                <h2>Shop The Look</h2>
+            </div>
+
+            <div class="shop-controls">
+                <div class="filters" id="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="rings">Rings</button>
+                    <button class="filter-btn" data-filter="earrings">Earrings</button>
+                    <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+                    <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+                </div>
+                <div class="sort">
+                    <select id="sort-select">
+                        <option value="default">Sort by</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <!-- Products injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real love from the ReenAura community.</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Super cute jewellery, perfect for daily wear! Haven't taken it off since I
+                        got it."</p>
+                    <div class="review-author">
+                        <div class="author-avatar"><img
+                                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                                alt="Sarah T."></div>
+                        <span class="author-name">Sarah T.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Quality is amazing for the price 😍 Literally looks like it cost 10x more."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><img
+                                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80"
+                                alt="Jessica M."></div>
+                        <span class="author-name">Jessica M.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Got so many compliments wearing this ring! Shipping was super fast too."</p>
+                    <div class="review-author">
+                        <div class="author-avatar"><img
+                                src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=100&q=80"
+                                alt="Chloe B."></div>
+                        <span class="author-name">Chloe B.</span>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The aesthetic is everything ✨ Will definitely be ordering the matching set
+                        next."</p>
+                    <div class="review-author">
+                        <div class="author-avatar"><img
+                                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=100&q=80"
+                                alt="Mia R."></div>
+                        <span class="author-name">Mia R.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>The ReenAura Story</h2>
+                    <p>Born out of a desire for accessible luxury, ReenAura brings you everyday wearable jewellery that
+                        feels like a second skin. We believe that looking aesthetic shouldn't cost a fortune.</p>
+                    <p>Designed for the trendsetters, our pieces are minimal, elegant, and perfectly suited for your
+                        Instagram and Pinterest feeds. Discover your aura.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.pexels.com/photos/9430422/pexels-photo-9430422.jpeg?_gl=1*87m6iv*_ga*MTIwNDY3MzY4NC4xNzQ3MzkwNTk5*_ga_8JE65Q40S6*czE3NzgwOTc5OTIkbzUkZzEkdDE3NzgxMDIwODckajE4JGwwJGgw"
+                        alt="ReenAura Aesthetics">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>ReenAura</h3>
+                    <p>Everyday elegance, reimagined. Minimal luxury for the modern generation.</p>
+                    <div class="social-links">
+                        <a href="#"><i data-lucide="instagram"></i></a>
+                        <a href="#"><i data-lucide="twitter"></i></a>
+                        <a href="#"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#shop">Shop</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Join our list for 10% off your first order.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ReenAura. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Slide-in -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-btn" id="close-cart"><i data-lucide="x"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items injected via JS -->
+            <div class="empty-cart">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cart-total-price">$0.00</span>
+            </div>
+            <button class="btn btn-primary btn-block" id="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i data-lucide="x"></i></button>
+            <div class="modal-grid" id="modal-body">
+                <!-- Modal content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+        <div class="modal-content checkout-content">
+            <button class="close-modal"><i data-lucide="x"></i></button>
+            <h2>Checkout</h2>
+            <div class="checkout-layout">
+                <form id="checkout-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod" checked>
+                                <span>Cash on Delivery</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="card">
+                                <span>Credit/Debit Card</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="easypaisa">
+                                <span>EasyPaisa</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="jazzcash">
+                                <span>JazzCash</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- Card Details (Hidden by default) -->
+                    <div id="card-details" class="card-details hidden">
+                        <div class="form-group">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="0000 0000 0000 0000">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Expiry Date</label>
+                                <input type="text" placeholder="MM/YY">
+                            </div>
+                            <div class="form-group">
+                                <label>CVV</label>
+                                <input type="text" placeholder="123">
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Place Order</button>
+                </form>
+                <div class="checkout-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="checkout-total">
+                        <span>Total to pay:</span>
+                        <span id="checkout-total-price">$0.00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content text-center">
+            <i data-lucide="check-circle" class="success-icon"></i>
+            <h2>Order Placed Successfully!</h2>
+            <p>Thank you for shopping with ReenAura.</p>
+            <button class="btn btn-primary close-success" style="margin-top: 20px;">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
